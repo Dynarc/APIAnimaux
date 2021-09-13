@@ -25,7 +25,7 @@ class ApiController{
         Model::sendJson($this->APIManager->getDBFamilles());
     }
 
-    function formatJson($json){
+    private function formatJson($json){
 
         $checked = [];
         $newJson = [];
